@@ -1,0 +1,19 @@
+﻿<Window x:Class="carSaleWpf.CarListForm" Loaded="CarListForm_Loaded"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:carSaleWpf"
+        mc:Ignorable="d"
+        Title="CarListForm" Height="600" Width="1100" ResizeMode="CanMinimize " Icon="logo.ico">
+    <Grid>
+
+        <Label Content="ВЫБОР АВТОМОБЛИЯ" HorizontalAlignment="Left" Margin="463,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonInfo"  Click="buttonInfo_Click" Content="Подробная инофрмация" HorizontalAlignment="Left" Margin="20,65,0,0" VerticalAlignment="Top" Width="151" Height="53" BorderBrush="Black" Background="#FF026EC3" Foreground="White" />
+        <Button x:Name="buttonTrackOrder"  Click="buttonTrackOrder_Click" Content="Отследить заказ" HorizontalAlignment="Left" Margin="220,65,0,0" VerticalAlignment="Top" Width="150" Height="53" Background="#FF026EC3" BorderBrush="Black" Foreground="White" />
+        <Button x:Name="buttonClose"  Click="buttonClose_Click" Content="Выход" HorizontalAlignment="Left" Margin="940,65,0,0" VerticalAlignment="Top" Width="130" Height="53" Background="#FF026EC3" BorderBrush="Black" Foreground="White" />
+        <DataGrid x:Name="dataGridViewCarList" Height="415" Margin="10,144,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="1072" IsReadOnly="True" SelectionMode="Single" SelectionUnit="FullRow" ColumnWidth="*" CanUserSortColumns="False" BorderBrush="#FF026EC3"/>
+       
+
+    </Grid>
+</Window>

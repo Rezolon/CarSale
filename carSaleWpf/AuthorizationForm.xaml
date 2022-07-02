@@ -1,0 +1,22 @@
+﻿<Window x:Class="carSaleWpf.AuthorizationForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:carSaleWpf"
+        mc:Ignorable="d" Height="358.583" Width="500.817" ResizeMode="CanMinimize" Title="Authorization" Icon="logo.png">
+    <Grid Margin="0,0,2,1">
+        <Grid.ColumnDefinitions>
+
+        </Grid.ColumnDefinitions>
+        <Label Content="АВТОРИЗАЦИЯ" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="151,22,0,0" Height="36" Width="164" FontWeight="Bold" FontSize="18"/>
+        <TextBox x:Name="textBoxLogin" Text="" HorizontalAlignment="Left" Height="23" Margin="105,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" BorderBrush="#FF026EC3"/>
+        <Label Content="Логин:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="105,80,0,0" Height="26" Width="95"/>
+        <Label Content="Пароль:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="105,154,0,0" Height="26" Width="95"/>
+        <CheckBox x:Name="checkBoxShowPassword" Content="Показать" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="334,193,0,0" Checked="checkBoxShowPassword_CheckedChanged" Unchecked="checkBoxShowPassword_CheckedChanged" BorderBrush="#FF026EC3"/>
+        <Button x:Name="buttonAuthorization" Content="Войти" HorizontalAlignment="Left" Margin="194,265,0,0" VerticalAlignment="Top" Width="95" Click="buttonAuthorization_Click" Height="34" Background="#FF026EC3" BorderBrush="Black" Foreground="White"/>
+        <PasswordBox x:Name="textBoxPassword" Password="" HorizontalAlignment="Left" Margin="105,185,0,0" VerticalAlignment="Top" Width="200" Height="23" BorderBrush="#FF026EC3"/>
+        <TextBox x:Name="textBoxPasswordShow" HorizontalAlignment="Left" Height="23" Margin="105,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Visibility="Collapsed"/>
+
+    </Grid>
+</Window>
